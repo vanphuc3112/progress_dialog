@@ -112,37 +112,7 @@ class _MyDialogState extends State<_MyDialog> {
               package: 'progress_dialog',
             ),
           ),
-          const SizedBox(width: 15.0),
-          Expanded(
-            child: _progressDialogType == ProgressDialogType.Normal
-                ? Text(_dialogMessage,
-                    textAlign: TextAlign.justify,
-                    style: TextStyle(
-                        color: Colors.black,
-                        fontSize: 22.0,
-                        fontWeight: FontWeight.w700))
-                : Stack(
-                    children: <Widget>[
-                      Positioned(
-                        child: Text(_dialogMessage,
-                            style: TextStyle(
-                                color: Colors.black,
-                                fontSize: 22.0,
-                                fontWeight: FontWeight.w700)),
-                        top: 35.0,
-                      ),
-                      Positioned(
-                        child: Text("$_progress/100",
-                            style: TextStyle(
-                                color: Colors.black,
-                                fontSize: 15.0,
-                                fontWeight: FontWeight.w400)),
-                        bottom: 15.0,
-                        right: 15.0,
-                      ),
-                    ],
-                  ),
-          )
+
         ]));
   }
 }
