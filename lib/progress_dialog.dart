@@ -1,7 +1,7 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
-String _dialogMessage = "Loading...";
+String _dialogMessage = "PLease wait..";
 enum ProgressDialogType { Normal, Download }
 
 ProgressDialogType _progressDialogType = ProgressDialogType.Normal;
